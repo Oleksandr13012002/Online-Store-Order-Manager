@@ -39,6 +39,11 @@ public class Order {
         return discount ? totalPrice - this.discount : totalPrice;
     }
 
+    public void recalculateTotalPrice(){
+        totalPrice = calculateTotalPrice();
+        discount = calculateDiscount();
+    }
+
     private double calculateDiscount(){
         return discountable.applyDiscount(totalPrice);
     }

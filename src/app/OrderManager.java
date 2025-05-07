@@ -13,7 +13,6 @@ public class OrderManager {
 
         final int firstOrderId = 1;
         final int secondOrderId = 2;
-        final double discount = 100;
 
         Order firstOrder = new Order(firstOrderId, new FixedDiscount(100));
         Order secondOrder = new Order(secondOrderId, new FixedDiscount(50));
