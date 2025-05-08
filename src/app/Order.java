@@ -72,6 +72,7 @@ public class Order {
 
     public void setDiscountable(Discountable discountable) {
         this.discountable = discountable;
+        recalculateTotalPrice();
     }
 
     @Override
